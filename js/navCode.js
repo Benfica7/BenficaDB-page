@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     updateButton.addEventListener("click", function() {
         codeLine.innerHTML = `db.<span class="code-property">update_one</span>(
     <span class="code-str">"name"</span>, 
-    <span class="code-str">"Benfica"</span>
+    <span class="code-str">"Benfica"</span>,
     {<span class="code-str">"name"</span>: <span class="code-str">"Washington"</span>, <span class="code-str">"age"</span>: <span class="code-int">67</span>}
 )</span>`
     })
