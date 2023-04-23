@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Benfica Data-Base</title>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/navButton.js"></script>
+    <script src="js/navCode.js"></script>
+    <script src="js/navAnchors.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <span id="logo" class="link">Benfica.</span>
+            <nav id="nav-bar">
+                <span id="nav-home" class="link">Home</span>
+                <a href="mailto:eugeniobenfica7@gmail.com" id="nav-contact" class="link">Contact</a>
+                <a href="https://github.com/Benfica7/Benfica-Simple-Data-Base" id="nav-source" class="link">Source</a>
+            </nav>
+            <div id="nav-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <dialog id="nav-bar-responsive">
+                <div id="nbr-content">
+                    <nav id="nbr-nav">
+                        <a id="nav-home2" class="link">Home</a>
+                        <a href="mailto:eugeniobenfica7@gmail.com" id="nav-contact" class="link">Contact</a>
+                        <a href="https://github.com/Benfica7/Benfica-Simple-Data-Base" id="nav-source" class="link">Source</a>
+                    </nav>
+                    <div><span id="nav-button-close" class="link">×</span></div>
+                </div>
+            </dialog>
+        </div>
+    </header>
+
+    <section id="section-intro">
+        <div id="intro-container">
+            <div id="intro-texts">
+                <h1 id="intro-title">Simples, fácil, melhor.</h1>
+                <p id="intro-about">Crie sua aplicação de testes ou até médio porte num piscar de olhos, e se precisar checar seu data-base não se preocupe, apenas abra seu arquivo.</p>
+            </div>
+            <div id="intro-buttons">
+                <a href="https://github.com/Benfica7/Benfica-Simple-Data-Base/wiki" id="intro-docs" class="intro-bt">Documentação</a>
+                <a href="mailto:eugeniobenfica7@gmail.com" id="intro-contact" class="intro-bt">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-supports">
+        <h2 id="supports-title">Supported languages</h2>
+        <div id="supports-langs-container"><span class="supports-lang"><span id="python">Python</span></span></div>
+    </section>
+
+    <section id="section-marketing">
+        <div id="marketing-texts">
+            <h1 id="marketing-title">Desenvolver não precisa ser ainda mais dificil</h1>
+            <span id="marketing-about">O BenficaDB vem para que você possa criar sem ter que aprender algo complexo antes.</span>
+        </div>
+        <div id="marketing-pros">
+            <div class="marketing-pro">
+                <div class="marketing-img-container"><img class="marketing-img" src="images/timer.svg"></div>
+                <h2 class="marketing-title">Desenvolva mais rapido</h2>
+                <span class="marketing-about">Desenvolva mais rapido com o BenficaDB com arquivos em formatos populares e uteis.</span>
+            </div>
+            <div class="marketing-pro">
+                <div class="marketing-img-container"><img class="marketing-img" src="images/file.svg"></div>
+                <h2 class="marketing-title">Formatos mais populares</h2>
+                <span class="marketing-about">Com o BenficaDB você pode armazenar seus dados em formato json ou csv e fazer a conversão como bem entender.</span>
+            </div>
+            <div class="marketing-pro">
+                <div class="marketing-img-container"><img class="marketing-img" src="images/relax.svg"></div>
+                <h2 class="marketing-title">Construa e relaxe</h2>
+                <span class="marketing-about">O BenficaDB é extremamente simples de se usar, construa seus projetos em paz.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-demo">
+            <div id="demo-texts">
+                <h1 id="demo-title">Tão simples quanto uma função</h1>
+                <div id="demo-about-container"><span id="demo-about">O BenficaDB tem seu uso baseado no uso de funções simplificadas para você.</span></div>
+            </div>
+        <div id="demo-code">
+            <nav id="code-nav">
+                <button id="cb-insert" class="code-button">Insert</button>
+                <button id="cb-update" class="code-button">Update</button>
+                <button id="cb-delete"class="code-button">Delete</button>
+            </nav>
+            <div id="code-view">
+                <pre class="code"><span class="code-line"><span class="code-keyword">from</span> bdb <span class="code-keyword">import</span> <span class="code-property">Database</span></span></pre>
+                <pre class="code"><span class="code-line">db = <span class="code-property">Database</span>(<span class="code-str">"users.json"</span>)</span></pre>
+                <pre class="code"><span id="code-line-crud" class="code-line">db.<span class="code-property">insert_one</span>(
+    {<span class="code-str">"name"</span>: <span class="code-str">"Benfica"</span>, <span class="code-str">"age"</span>: <span class="code-int">15</span>}
+)</span></pre>
+                <pre class="code"><span class="code-line">db.<span class="code-property ">save</span>()</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-goal">
+        <h1 id="goal-title">De Benfica para o mundo</h1>
+        <span id="goal-about">O objetivo do BenficaDB é ajudar desenvolvedores sem tempo da melhor forma possivel. É simples mas, as vezes é só disso que precisamos.</span>
+    </section>
+
+    <section id="section-advantages">
+        <ul id="adv-list">
+            <li class="adv-item"><img class="adv-list-img" src="images/yes.svg">Não requer conhecimento avançado de SQL ou outra linguagem de consulta de banco de dados.</li>
+            <li class="adv-item"><img class="adv-list-img" src="images/yes.svg">Não requer a instalação de um banco de dados externo.</li>
+            <li class="adv-item"><img class="adv-list-img" src="images/yes.svg">Pode ser facilmente incorporado a um projeto como uma biblioteca.</li>
+            <li class="adv-item"><img class="adv-list-img" src="images/yes.svg">Pode ser usado para armazenar dados em varios formatos como JSON, que é amplamente usado e facilmente legível por humanos.</li>
+            <li class="adv-item"><img class="adv-list-img" src="images/no.svg">Não é adequado para lidar com grandes conjuntos de dados devido ao armazenamento na memória.</li>
+            <li class="adv-item"><img class="adv-list-img" src="images/no.svg">Pode ser menos eficiente em termos de desempenho em comparação com o banco de dados especializado.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <a id="footer-link" href="https://github.com/Benfica7">
+            <span>Developed by Benfica</span>
+            <img id="footer-github" src="images/github.svg">
+        </a>
+    </footer>
+</body>
+</html>
